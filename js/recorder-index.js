@@ -52,7 +52,9 @@ recorder && recorder.exportWAV(function(blob) {
     var formData = new FormData();
     formData.append('FileData',blob);
     
-    $.post("http://posttestserver.com/post.php?dir=steveo",{'Filedata':formData});
+    xhr = new XMLHttpRequest();
+    xhr.open("POST","http://posttestserver.com/post.php?dir=steveo",true);
+    xhr.send(formData);
     
     _app.audioSubmission(formData);
     

@@ -41,7 +41,7 @@ _app.audioSubmission = function (file) {
        {'name': 'key', value:'810ff583bed6266bc7cec7781b49cfc9'}
    ];
     console.log("Got Submission");
-    _app.nimble.getWithFile(file, _app.audioSubmissionHandler,0, true, params,{},false);
+    _app.nimble.getWithFile(file, _app.audioSubmissionHandler,0, params,false);
 }
 
 _app.audioSubmissionHandler = function (data){
