@@ -42,7 +42,7 @@ body {
   padding: 0;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 .absolute-center {
   margin: auto;
   position: absolute;
@@ -52,19 +52,19 @@ body {
   right: 0;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 #recording-wrapper {
   height: 400px;
   width: 400px;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 #mic-wrapper {
   width: 200px;
   height: 200px;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 #oval {
   width: 150px;
   height: 150px;
@@ -72,7 +72,7 @@ body {
   cursor: pointer;
 }
 
-/* line 69, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 #oval:hover {
   width: 170px;
   height: 170px;
@@ -80,13 +80,13 @@ body {
   cursor: pointer;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 #mic {
   width: 70px;
   height: 70px;
 }
 
-/* line 81, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 #status-message {
   position: absolute;
   margin: 0 auto;
