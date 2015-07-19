@@ -37,19 +37,16 @@ _app.formSubmissionHandler = function (data){
 }
 
 _app.audioSubmission = function (file) {
-   var val = document.getElementById("inputarea").value;
    var params = [
-       {'name': 'key', value:'810ff583bed6266bc7cec7781b49cfc9'},
-       {'name': 'txt', value:val}
+       {'name': 'key', value:'810ff583bed6266bc7cec7781b49cfc9'}
    ];
     console.log("Got Submission");
-    _app.nimble.getWithFile(file, _app.audioSubmissionHandler,0, true, params);
+    _app.nimble.getWithFile(file, _app.audioSubmissionHandler,0, null,false);
 }
 
 _app.audioSubmissionHandler = function (data){
    var json = JSON.parse(data);
     console.log(json);
-   var output = document.getElementById("inputarea").value;
     
 }
 
