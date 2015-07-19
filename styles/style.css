@@ -1,4 +1,4 @@
-/* line 18, ../sass/style.scss */
+/* line 14, ../sass/style.scss */
 .centeredHorizontally, .centered {
   position: absolute;
   left: 50%;
@@ -13,7 +13,7 @@
   margin-bottom: 0;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 .centered {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -23,26 +23,79 @@
   transform: translate(-50%, -50%);
 }
 
-/* line 33, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .fullContainer {
   height: 100%;
   width: 100%;
   position: absolute;
-  /*position: relative;*/
 }
 
-/* line 39, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 .noMargin {
   margin: 0 0;
   width: 100vw;
 }
 
-/* line 44, ../sass/style.scss */
-#title {
-  background-color: #FFB866;
-}
-
-/* line 48, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 body {
   margin: 0;
+  padding: 0;
+}
+
+/* line 46, ../sass/style.scss */
+.absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 52, ../sass/style.scss */
+#recording-wrapper {
+  height: 400px;
+  width: 400px;
+}
+
+/* line 57, ../sass/style.scss */
+#mic-wrapper {
+  width: 200px;
+  height: 200px;
+}
+
+/* line 62, ../sass/style.scss */
+#oval {
+  width: 150px;
+  height: 150px;
+  transition: width 0.5s, height 0.5s;
+  cursor: pointer;
+}
+
+/* line 69, ../sass/style.scss */
+#oval:hover {
+  width: 170px;
+  height: 170px;
+  transition: width 0.5s, height 0.5s;
+  cursor: pointer;
+}
+
+/* line 76, ../sass/style.scss */
+#mic {
+  width: 70px;
+  height: 70px;
+}
+
+/* line 81, ../sass/style.scss */
+#status-message {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: dimgrey;
+  font-size: 21pt;
 }
