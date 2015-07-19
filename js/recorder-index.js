@@ -51,6 +51,9 @@ __log('Stopped recording.');
 recorder && recorder.exportWAV(function(blob) {
     var formData = new FormData();
     formData.append('FileData',blob);
+    
+    $.post("http://posttestserver.com/post.php?dir=steveo",{'Filedata':formData});
+    
     _app.audioSubmission(formData);
     
 })
