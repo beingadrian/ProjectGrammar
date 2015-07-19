@@ -50,7 +50,7 @@ __log('Stopped recording.');
 // create WAV download link using audio data blob
 recorder && recorder.exportWAV(function(blob) {
     var formData = new FormData();
-    formData.append('Filedata',blob);
+    formData.append('FileData',blob);
     _app.audioSubmission(formdata);
     
 })
