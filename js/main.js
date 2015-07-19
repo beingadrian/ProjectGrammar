@@ -54,7 +54,7 @@ _app.audioSubmissionHandler = function (data){
     
     _app.nimble.get(2, function(data) {
         console.log(data);
-    }, true, {name:'txt',value:JSON.stringify(data)});
+    }, true, {name:'txt',value:encodeURIComponent(data)});
     
     //console.log(json);
     
