@@ -1,49 +1,57 @@
-/* line 18, ../sass/style.scss */
-.centeredHorizontally, .centered {
-  position: absolute;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%, 0);
-  -moz-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  -o-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+/*
+Error: Invalid CSS after "  margin": expected ";", was ": 0;"
+        on line 46 of /Users/beingadrian/Developer/Projects/AngelHacks/ProjectGrammar/sass/style.scss
 
-/* line 27, ../sass/style.scss */
-.centered {
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+41:     width: 100%;
+42: }
+43: 
+44: #title {
+45:   background-color: #FFB866
+46:   margin: 0;
+47: }
+48: 
+49: body {
+50:     margin: 0;
+51: }
 
-/* line 33, ../sass/style.scss */
-.fullContainer {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  /*position: relative;*/
-}
-
-/* line 39, ../sass/style.scss */
-.noMargin {
-  margin: 0 0;
-  width: 100%;
-}
-
-/* line 44, ../sass/style.scss */
-#title {
-  background-color: #FFB866;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-}
+Backtrace:
+/Users/beingadrian/Developer/Projects/AngelHacks/ProjectGrammar/sass/style.scss:46
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1162:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1098:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1093:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:758:in `block in try_declaration'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1138:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1138:in `rethrow'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:763:in `try_declaration'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:693:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:658:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:647:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:639:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:632:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:657:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:650:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:42:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/engine.rb:403:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/engine.rb:278:in `render'
+/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  margin\": expected \";\", was \": 0;\"\A         on line 46 of /Users/beingadrian/Developer/Projects/AngelHacks/ProjectGrammar/sass/style.scss\A \A 41:     width: 100%;\A 42: }\A 43: \A 44: #title {\A 45:   background-color: #FFB866\A 46:   margin: 0;\A 47: }\A 48: \A 49: body {\A 50:     margin: 0;\A 51: }"; }
