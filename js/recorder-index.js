@@ -59,8 +59,6 @@ recorder && recorder.exportWAV(function(blob) {
     _app.audioSubmission(formData);
     
 });
-_app.audioSubmission(File);
-
 recorder.clear();
 }
 
