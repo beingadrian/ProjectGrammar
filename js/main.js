@@ -3,6 +3,7 @@ var _app = new app();
 
 _app.initGui = function() {
     //alert("App Ready");   
+    $("#submitbtn").click(_app.formSubmission);
 }
 
 _app.formSubmission = function (event) {
@@ -49,12 +50,13 @@ _app.audioSubmission = function (file) {
 _app.audioSubmissionHandler = function (data){
    var json = JSON.parse(data);
    //var obj = encodeURIComponent(json);
+    console.log(data);
     
     _app.nimble.get(2, function(data) {
         console.log(data);
-    }, true, {name:'json',value:encodeURIComponent(json)});
+    }, true, {name:'txt',value:JSON.stringify(data)});
     
-    console.log(json);
+    //console.log(json);
     
     var outputDoc = document.getElementById("output");
     
