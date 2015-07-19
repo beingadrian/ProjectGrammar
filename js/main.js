@@ -22,6 +22,8 @@ _app.formSubmissionHandler = function (data){
    
    var output = document.getElementById("inputarea").value;  
 
+    
+    
    for (i=(pages.length-1);i>=0;i--) {
        var p = pages[i];
        var lt =  p['linkTitle'].split('-');
@@ -46,9 +48,17 @@ _app.audioSubmission = function (file) {
 
 _app.audioSubmissionHandler = function (data){
    var json = JSON.parse(data);
+   //var obj = encodeURIComponent(json);
+    
+    _app.nimble.get(2, function(data) {
+        console.log(data);
+    }, true, {name:'json',value:JSON.stringify(json)});
+    
     console.log(json);
     
     var outputDoc = document.getElementById("output");
+    
+    
     
     //var output = document.getElementById("inputarea").value;  
     var output = json['ListPage']['title'];
@@ -73,7 +83,7 @@ _app.audioSubmissionHandler = function (data){
        var lt =  p['LinkUrl'].split('-');
        var start = parseInt(lt[0]);
        var end = parseInt(lt[1])+1;
-       output = output.slice(0,start) + "<span class='highlight' id='" +p['@attributes']['id']+ "'>" + output.slice(start,end) 
+       output = output.slice(0,start) + "<span class='highlighted' id='" +p['@attributes']['id']+ "'>" + output.slice(start,end) 
            + "</span>" + output.slice(end,output.length);
        console.log(output);
     }
