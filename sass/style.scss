@@ -1,8 +1,8 @@
 @import "compass";
 
-//The transistion went smoothly, and I can now use // to comment :D
+// The transistion went smoothly, and I can now use // to comment :D
 
-//I can now define pseudo-functions :D
+// I can now define pseudo-functions :D
 @mixin transformTranslate($x, $y) {
    -webkit-transform: translate($x,$y);
       -moz-transform: translate($x,$y);
@@ -10,10 +10,6 @@
         -o-transform: translate($x,$y);
            transform: translate($x,$y);
 }
-
-// :root {
-//     height: 100vh;
-// }
 
 .centeredHorizontally {
 	position: absolute;
@@ -34,11 +30,10 @@
 	height: 100%;
 	width: 100%;
 	position: absolute;
-    /*position: relative;*/
 }
 .noMargin {
 	margin: 0 0;
-    width: 100%;
+     width: 100%;
 }
 
 #title {
@@ -48,4 +43,64 @@
 
 body {
     margin: 0;
+	width: 100vw;
+}
+
+// Basic CSS
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// sets everything to the absolute center
+.absolute-center {
+	margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+// wraps the text and graphic
+#recording-wrapper {
+	height: 400px;
+	width: 400px;
+}
+
+// wraps the blue oval and microphone
+#mic-wrapper {
+	width: 200px;
+	height: 200px;
+}
+
+#oval {
+	width: 150px;
+	height: 150px;
+	transition: width 0.5s, height 0.5s;
+	cursor: pointer;
+}
+
+// on hover, transition
+#oval:hover {
+	width: 170px;
+	height: 170px;
+	transition: width 0.5s, height 0.5s;
+	cursor: pointer;
+}
+
+#mic {
+	width: 70px;
+	height: 70px;
+}
+
+#status-message {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 30px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: dimgrey;
+	font-size: 21pt;
 }
