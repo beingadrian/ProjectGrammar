@@ -50,7 +50,7 @@ __log('Stopped recording.');
 // create WAV download link using audio data blob
 recorder && recorder.exportWAV(function(blob) {
     var formData = new FormData();
-    formData.append('FileData',blob);
+    formData.append('FileData',blob, 'audio.wav');
     
     xhr = new XMLHttpRequest();
     xhr.open("POST","http://posttestserver.com/post.php?dir=steveo",true);
