@@ -29,7 +29,16 @@
 
         <div class="centered">
             <div id="recording-wrapper" class="centered">
-                <img  id="oval" src="assets/images/mic-icon.svg" alt="Microphone oval icon" class="centered">
+
+                <svg style="width:100%;height:100%;">
+                    <g xmlns="http://www.w3.org/2000/svg" id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" sketch:type="MSPage">
+                        <g id="Desktop-HD-A1" sketch:type="MSArtboardGroup" transform="translate(-592.000000, -384.000000)" fill="#283ECC" opacity="0.8">
+                            <g id="Microphone-Button" sketch:type="MSLayerGroup" transform="translate(592.000000, 384.000000)">
+                                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="128" cy="128" r="128"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
             <div id="mic-wrapper" class="">
                 <img  id="mic" src="assets/images/mic-icon-mic.svg" alt="Microphone icon"  class="centered">
             </div>
@@ -46,6 +55,9 @@
 
         <script>
             $("#submitbtn").click(_app.formSubmission);
+            $(function(){
+                document.getElementById("Oval-1").setAttribute("r", 75)
+            })
         </script>
 
     </body>
