@@ -67,6 +67,6 @@ recorder && recorder.exportWAV(function(blob) {
   hf.innerHTML = hf.download;
   li.appendChild(au);
   li.appendChild(hf);
-  recordingslist.appendChild(li);
+  //recordingslist.appendChild(li);
 });
 }
