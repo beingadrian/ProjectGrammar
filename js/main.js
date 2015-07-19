@@ -43,14 +43,13 @@ _app.audioSubmission = function (file) {
        {'name': 'txt', value:val}
    ];
     console.log("Got Submission");
-    _app.nimble.get(0, _app.audioSubmissionHandler, true, params);
+    _app.nimble.getWithFile(file, _app.audioSubmissionHandler,0, true, params);
 }
 
 _app.audioSubmissionHandler = function (data){
    var json = JSON.parse(data);
-    
+    console.log(json);
    var output = document.getElementById("inputarea").value;
-   
     
 }
 

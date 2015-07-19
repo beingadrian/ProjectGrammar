@@ -48,12 +48,18 @@ recorder && recorder.stop();
 __log('Stopped recording.');
 
 // create WAV download link using audio data blob
-createDownloadLink();
+recorder && recorder.exportWAV(function(blob) {
+    var formData = new FormData();
+    formData.append('Filedata',blob);
+    _app.audioSubmission(formdata);
+    
+})
+_app.audioSubmission(File);
 
 recorder.clear();
 }
 
-function createDownloadLink() {
+/*function createDownloadLink() {
 recorder && recorder.exportWAV(function(blob) {
   var url = URL.createObjectURL(blob);
   var li = document.createElement('li');
@@ -68,5 +74,7 @@ recorder && recorder.exportWAV(function(blob) {
   li.appendChild(au);
   li.appendChild(hf);
   //recordingslist.appendChild(li);
+   
 });
 }
+*/
