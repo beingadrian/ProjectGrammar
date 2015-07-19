@@ -494,7 +494,7 @@ var Nimble = Nimble || {};
                 }
             }
             if(!native){
-                //console.log(postUrl);
+                console.log(postUrl);
                 $.ajax({
                     type: "POST",
                     url: postUrl,
