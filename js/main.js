@@ -48,6 +48,34 @@ _app.audioSubmissionHandler = function (data){
    var json = JSON.parse(data);
     console.log(json);
     
+    
+    var output = document.getElementById("inputarea").value;  
+    var output = json['ListPage']['title'];
+    
+    var pages = json['ListPage']['pages'];
+    
+    if (pages === Array) {
+    
+   for (i=(pages.length-1);i>=0;i--) {
+       var p = pages[i];
+       var lt =  p['LinkPage']['LinkUrl'].split('-');
+       var start = parseInt(lt[0]);
+       var end = parseInt(lt[1])+1;
+       output = output.slice(0,start) + "<span class='highlight' id='" +p['@attributes']['id']+ "'>" + output.slice(start,end) 
+           + "</span>" + output.slice(end,output.length);
+       console.log(output);
+   }
+    }
+    else {
+        var p = pages['LinkPage'];
+       var lt =  p['LinkUrl'].split('-');
+       var start = parseInt(lt[0]);
+       var end = parseInt(lt[1])+1;
+       output = output.slice(0,start) + "<span class='highlight' id='" +p['@attributes']['id']+ "'>" + output.slice(start,end) 
+           + "</span>" + output.slice(end,output.length);
+       console.log(output);
+    }
+    var matchesCount = output.split("<Music/Noise>").length - 1;
 }
 
 
