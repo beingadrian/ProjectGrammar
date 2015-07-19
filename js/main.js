@@ -36,8 +36,7 @@ _app.formSubmissionHandler = function (data){
     document.getElementById("output").innerHTML = output;
 }
 
-_app.audioSubmission = function (event) {
-   event.preventDefault();
+_app.audioSubmission = function (file) {
    var val = document.getElementById("inputarea").value;
    var params = [
        {'name': 'key', value:'810ff583bed6266bc7cec7781b49cfc9'},
