@@ -48,8 +48,9 @@ _app.audioSubmissionHandler = function (data){
    var json = JSON.parse(data);
     console.log(json);
     
+    var outputDoc = document.getElementById("output");
     
-    var output = document.getElementById("inputarea").value;  
+    //var output = document.getElementById("inputarea").value;  
     var output = json['ListPage']['title'];
     
     var pages = json['ListPage']['pages'];
@@ -66,8 +67,9 @@ _app.audioSubmissionHandler = function (data){
        console.log(output);
    }
     }
-    else {
-        var p = pages['LinkPage'];
+    else if (pages['LinkPage']){
+      var p = pages['LinkPage'];
+        console.log(typeof(pages['LinkPage']));
        var lt =  p['LinkUrl'].split('-');
        var start = parseInt(lt[0]);
        var end = parseInt(lt[1])+1;
@@ -75,7 +77,9 @@ _app.audioSubmissionHandler = function (data){
            + "</span>" + output.slice(end,output.length);
        console.log(output);
     }
-    var matchesCount = output.split("<Music/Noise>").length - 1;
+    
+    outputDoc.innerHTML = output;
+    //var matchesCount = outputVal.split("<Music/Noise>").length - 1;
 }
 
 
