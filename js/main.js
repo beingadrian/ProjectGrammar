@@ -1,15 +1,59 @@
-function formSubmission(event) {
-   event.preventDefault();
-   var val = $("#textarea").text();
-   var params = [
-       {'name': 'key', value:'xyz'},
-       {'name': 'txt', value:val}
-   ];
-    app.nimble.get(0, handler, true, params);
+
+var _app = new app();
+
+_app.initGui = function() {
+    //alert("App Ready");   
 }
 
-function formSubmissionHandler(data){
-   var json = JSON.parse(data);
-   json.ListPage.pages.LinkPage[1].searchPage.ListPage.pages.BasicPage[0].title
+_app.formSubmission = function (event) {
+   event.preventDefault();
+   var val = document.getElementById("inputarea").value;
+   var params = [
+       {'name': 'key', value:'810ff583bed6266bc7cec7781b49cfc9'},
+       {'name': 'txt', value:val}
+   ];
+    console.log("Got Submission");
+    _app.nimble.get(0, _app.formSubmissionHandler, true, params);
 }
-//HI :)
+
+_app.formSubmissionHandler = function (data){
+   var json = JSON.parse(data);
+   var pages = json.ListPage.pages.LinkPage;
+   
+   var output = document.getElementById("inputarea").value;  
+
+   for (i=(pages.length-1);i>=0;i--) {
+       var p = pages[i];
+       var lt =  p['linkTitle'].split('-');
+       var start = parseInt(lt[0]);
+       var end = parseInt(lt[1])+1;
+       output = output.slice(0,start) + "<span id='" +p['@attributes']['id']+ "'>" + output.slice(start,end) 
+           + "</span>" + output.slice(end,output.length);
+       console.log(output);
+       
+   }
+    
+    document.getElementById("output").innerHTML = output;
+}
+
+_app.audioSubmission = function (event) {
+   event.preventDefault();
+   var val = document.getElementById("inputarea").value;
+   var params = [
+       {'name': 'key', value:'810ff583bed6266bc7cec7781b49cfc9'},
+       {'name': 'txt', value:val}
+   ];
+    console.log("Got Submission");
+    _app.nimble.get(0, _app.audioSubmissionHandler, true, params);
+}
+
+_app.audioSubmissionHandler = function (data){
+   var json = JSON.parse(data);
+    
+   var output = document.getElementById("inputarea").value;
+   
+    
+}
+
+
+_app.initialize();

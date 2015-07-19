@@ -454,7 +454,7 @@ var Nimble = Nimble || {};
                 crossDomain: true,
                 dataType: 'text',
                 success: function (data) {
-                    console.log(data);
+                    //console.log(data);
                     next(data);
                 },
                 error: _self.failedRequest

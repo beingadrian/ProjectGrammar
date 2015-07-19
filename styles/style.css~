@@ -36,7 +36,17 @@
   width: 100%;
 }
 
+<<<<<<< HEAD
+/* line 44, ../sass/style.scss */
+#title {
+  background-color: #FFB866;
+  margin: 0;
+}
+
+/* line 49, ../sass/style.scss */
+=======
 /* line 41, ../sass/style.scss */
+>>>>>>> origin/Design-Experiment-A
 body {
   margin: 0;
   padding: 0;
