@@ -1,6 +1,5 @@
 
 var isRecording = false;
-var isLooping = false
 
 $(document).ready(function() {
 
@@ -22,13 +21,6 @@ $(document).ready(function() {
             // change color
             oval_element.css("-webkit-filter", "hue-rotate(90deg)")
             // animate isRecording
-            isLooping = true;
-
-            if (isLooping) {
-
-                
-
-            }
 
         } else {
             // if recording, stop recording
@@ -63,9 +55,8 @@ $(document).ready(function() {
         $('#recording-wrapper').animate({opacity: 1}, 1000, function() {
         // this.hide();
         });
+        $('#status-message').text("Click to start recording");
         isRecording = false;
-        isLooping = false;
-        console.log(isLooping);
     });
 
     // set height
