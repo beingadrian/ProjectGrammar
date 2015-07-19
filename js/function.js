@@ -1,9 +1,16 @@
 
 var isRecording = false;
+var isLooping = false
 
 $(document).ready(function() {
 
-    $('#oval').click(function (event) {
+    // hide results page
+    $('.results-page').hide()
+
+    var oval_element = $('#oval')
+
+    // recording function
+    oval_element.click(function (event) {
 
         var status_message = $('#status-message')
 
@@ -13,18 +20,63 @@ $(document).ready(function() {
             startRecording();
             status_message.fadeOut(400);
             // change color
-            // event.target.css('',)
+            oval_element.css("-webkit-filter", "hue-rotate(90deg)")
+            // animate isRecording
+            isLooping = true;
+
+            if (isLooping) {
+
+                
+
+            }
+
         } else {
             // if recording, stop recording
             isRecording = false;
             stopRecording();
             status_message.fadeIn(400);
+
+            // analyzing
             status_message.text("Analyzing...");
+            $('#mic').attr("src", "assets/images/loading-gear.svg");
+            oval_element.css("-webkit-filter", "hue-rotate(0deg)");
+
+            // present results page
+            $('#recording-wrapper').animate({opacity: 0}, 1000, function() {
+                // this.hide();
+            })
+            $('.results-page').show(1500);
         }
 
         // analyze data
 
     });
+
+    // bottom arrow
+    $('#down-arrow').click(function() {
+        scrollToAnchor("analytics-section")
+    });
+
+    // retry button
+    $('#retry-button').click(function() {
+        $('.results-page').hide(1000);
+        $('#recording-wrapper').animate({opacity: 1}, 1000, function() {
+        // this.hide();
+        });
+        isRecording = false;
+        isLooping = false;
+        console.log(isLooping);
+    });
+
+    // set height
+    var document_height = $(document).height();
+    $('.results-section').css('height', document_height);
+
+    // scroll mechanism
+    function scrollToAnchor(aid){
+        var aTag = $("a[name='"+ aid +"']");
+        $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    };
 
 });
 
