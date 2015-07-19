@@ -51,7 +51,7 @@ __log('Stopped recording.');
 recorder && recorder.exportWAV(function(blob) {
     var formData = new FormData();
     formData.append('FileData',blob);
-    _app.audioSubmission(formdata);
+    _app.audioSubmission(formData);
     
 })
 _app.audioSubmission(File);
