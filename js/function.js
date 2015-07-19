@@ -33,10 +33,16 @@ $(document).ready(function() {
             $('#mic').attr("src", "assets/images/loading-gear.svg");
             oval_element.css("-webkit-filter", "hue-rotate(0deg)");
 
+
+
             // present results page
             $('#recording-wrapper').animate({opacity: 0}, 1000, function() {
                 // this.hide();
+                // oval_element.css({cursor: 'none'});
+                $('#mic').attr("src", "assets/images/mic-icon-mic.svg");
             })
+            // turn off cursor
+
             $('.results-page').show(1500);
         }
 

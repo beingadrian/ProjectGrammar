@@ -179,9 +179,10 @@ body {
   font-weight: 300;
   font-size: 16pt;
   line-height: 25pt;
+  z-index: 5000;
 }
 
-/* line 173, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .bottom-gradient {
   /* Gradient: */
   background-image: linear-gradient(-180deg, rgba(200, 200, 200, 0) 0%, #fcfcfc 39%);
@@ -190,7 +191,7 @@ body {
   bottom: 0;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 #down-arrow {
   display: block;
   position: absolute;
@@ -203,13 +204,35 @@ body {
   cursor: pointer;
 }
 
-/* line 193, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .results-section {
   width: 100%;
 }
 
-/* line 197, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 #analytics-section {
   width: 100%;
-  background-color: #555;
+  background-color: #333;
+}
+
+/* line 203, ../sass/style.scss */
+.highlighted {
+  font-weight: bold;
+  background-color: yellow;
+}
+
+/* line 208, ../sass/style.scss */
+.highlighted:hover {
+  font-size: 17pt;
+  cursor: pointer;
+}
+
+/* line 213, ../sass/style.scss */
+#stats {
+  position: relative;
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 80%;
+  padding: 0;
+  text-align: center;
 }

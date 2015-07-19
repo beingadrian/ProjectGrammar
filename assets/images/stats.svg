@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1175px" height="535px" viewBox="0 0 1175 535" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Pie chart + Rectangle 7 + Analytics text</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-A5" sketch:type="MSArtboardGroup" transform="translate(-147.000000, -311.000000)">
+            <g id="Pie-chart-+-Rectangle-7-+-Analytics-text" sketch:type="MSLayerGroup" transform="translate(147.000000, 311.000000)">
+                <g id="Pie-chart" transform="translate(0.000000, 43.000000)" sketch:type="MSShapeGroup">
+                    <path d="M224.532225,449 C348.537948,449 449.064449,348.487926 449.064449,224.5 C449.064449,173.789849 432.24888,127.006621 403.888872,89.420691 C362.907762,35.1078305 297.820518,0 224.532225,0 C100.526501,0 0,100.512074 0,224.5 C0,348.487926 100.526501,449 224.532225,449 Z" id="Oval-10" opacity="0.443283582" fill="#E2E2E2"></path>
+                    <path d="M449.137086,224.500005 C449.137083,348.487929 348.610583,449 224.604861,449 C100.599138,449 0.0726366062,348.487926 0.0726366062,224.5 C0.0726366062,100.512074 100.599138,0 224.604861,0 C258.992639,0 291.574871,7.72935031 320.708531,21.5452607 L224.564257,224.500004 L449.137086,224.500004 Z" id="Oval-9" fill="#CC4D2F"></path>
+                </g>
+                <rect id="Rectangle-7" opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" x="570" y="0" width="3" height="535"></rect>
+                <g id="Analytics-text" transform="translate(638.000000, 47.000000)" font-weight="normal" font-family="Avenir Next" sketch:type="MSTextLayer" fill="#FFFFFF" opacity="0.5">
+                    <g id="75%-+-grammatically" transform="translate(0.833404, 0.750000)">
+                        <text id="75%" font-size="144">
+                            <tspan x="0" y="144">75%</tspan>
+                        </text>
+                        <text id="grammatically" font-size="36" line-spacing="42">
+                            <tspan x="306" y="59">grammatically</tspan>
+                            <tspan x="306" y="101">correct</tspan>
+                        </text>
+                    </g>
+                    <text id="15%-Segmentation-err" font-size="36" line-spacing="42">
+                        <tspan x="8.83340443" y="231.75">15% Segmentation error</tspan>
+                    </text>
+                    <text id="5%-Spelling-error" font-size="36" line-spacing="42">
+                        <tspan x="8.83340443" y="299.25">5% Spelling error</tspan>
+                    </text>
+                    <text id="2%-Grammatical-error" font-size="36" line-spacing="42">
+                        <tspan x="8.83340443" y="366.75">2% Grammatical error</tspan>
+                    </text>
+                    <text id="2%-Unknown-error" font-size="36" line-spacing="42">
+                        <tspan x="8.83340443" y="434.25">2% Unknown error</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

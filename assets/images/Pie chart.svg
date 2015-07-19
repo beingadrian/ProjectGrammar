@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="450px" height="449px" viewBox="0 0 450 449" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Pie chart</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-A5" sketch:type="MSArtboardGroup" transform="translate(-147.000000, -354.000000)">
+            <g id="Pie-chart" sketch:type="MSLayerGroup" transform="translate(147.000000, 354.000000)">
+                <ellipse id="Oval-10" opacity="0.443283582" fill="#FFB866" sketch:type="MSShapeGroup" cx="224.532225" cy="224.5" rx="224.532225" ry="224.5"></ellipse>
+                <path d="M449.137086,224.500005 C449.137083,348.487929 348.610583,449 224.604861,449 C100.599138,449 0.0726366062,348.487926 0.0726366062,224.5 C0.0726366062,100.512074 100.599138,0 224.604861,0 C258.992639,0 291.574871,7.72935031 320.708531,21.5452607 L224.564257,224.500004 L449.137086,224.500004 Z" id="Oval-9" fill="#CC4D2F" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

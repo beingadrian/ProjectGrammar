@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="528px" height="404px" viewBox="0 0 528 404" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Analytics text</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-A5" sketch:type="MSArtboardGroup" transform="translate(-794.000000, -390.000000)" font-weight="normal" font-family="Avenir Next" fill="#404040" opacity="0.5">
+            <g id="Analytics-text" sketch:type="MSLayerGroup" transform="translate(785.000000, 358.000000)">
+                <g id="75%-+-grammatically" transform="translate(0.833404, 0.750000)" sketch:type="MSTextLayer">
+                    <text id="75%" font-size="144">
+                        <tspan x="0" y="144">75%</tspan>
+                    </text>
+                    <text id="grammatically" font-size="36" line-spacing="42">
+                        <tspan x="306" y="59">grammatically</tspan>
+                        <tspan x="306" y="101">correct</tspan>
+                    </text>
+                </g>
+                <text id="15%-Segmentation-err" sketch:type="MSTextLayer" font-size="36" line-spacing="42">
+                    <tspan x="8.83340443" y="231.75">15% </tspan>
+                    <tspan x="89.5814044" y="231.75">Segmentation error</tspan>
+                </text>
+                <text id="5%-Spelling-error" sketch:type="MSTextLayer" font-size="36" line-spacing="42">
+                    <tspan x="8.83340443" y="299.25">5% </tspan>
+                    <tspan x="68.7014044" y="299.25">Spelling error</tspan>
+                </text>
+                <text id="2%-Grammatical-error" sketch:type="MSTextLayer" font-size="36" line-spacing="42">
+                    <tspan x="8.83340443" y="366.75">2% </tspan>
+                    <tspan x="68.7014044" y="366.75">Grammatical error</tspan>
+                </text>
+                <text id="2%-Unknown-error" sketch:type="MSTextLayer" font-size="36" line-spacing="42">
+                    <tspan x="8.83340443" y="434.25">2% Unknown</tspan>
+                    <tspan x="224.221404" y="434.25"> error</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

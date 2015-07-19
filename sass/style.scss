@@ -168,6 +168,7 @@ body {
     font-weight: 300;
     font-size: 16pt;
     line-height: 25pt;
+    z-index: 5000;
 }
 
 .bottom-gradient {
@@ -196,5 +197,24 @@ body {
 
 #analytics-section {
     width: 100%;
-    background-color: #555;
+    background-color: #333;
+}
+
+.highlighted {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.highlighted:hover {
+    font-size: 17pt;
+    cursor: pointer;
+}
+
+#stats {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 80%;
+    padding: 0;
+    text-align: center;
 }
