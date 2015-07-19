@@ -38,40 +38,44 @@
 
 /* line 39, ../sass/style.scss */
 #title {
-  background-color: #FFB866;
   margin: 0;
+  padding-left: 30px;
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25pt;
+  color: #555;
 }
 
-/* line 44, ../sass/style.scss */
-body {
-  margin: 0;
-  width: 100vw;
+/* line 48, ../sass/style.scss */
+header {
+  height: 80px;
+  background-color: #eee;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 body {
   margin: 0;
   padding: 0;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 #recording-wrapper {
   height: 400px;
   width: 400px;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 #mic-wrapper {
   width: 200px;
   height: 200px;
 }
 
-/* line 69, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 #mic {
   z-index: 2000;
 }
 
-/* line 73, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 #oval {
   width: 150px;
   height: 150px;
@@ -83,7 +87,7 @@ body {
   z-index: 1000;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 #oval:hover {
   width: 170px;
   height: 170px;
@@ -93,7 +97,7 @@ body {
   z-index: 1000;
 }
 
-/* line 94, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 #oval2 {
   width: 190px;
   height: 190px;
@@ -103,7 +107,7 @@ body {
   opacity: 0;
 }
 
-/* line 103, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 #oval3 {
   width: 240px;
   height: 240px;
@@ -113,13 +117,13 @@ body {
   opacity: 0;
 }
 
-/* line 112, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 #mic {
   width: 70px;
   height: 70px;
 }
 
-/* line 117, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 #status-message {
   position: absolute;
   margin: 0 auto;
@@ -133,7 +137,7 @@ body {
   font-size: 21pt;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .icon {
   float: right;
   margin-right: 50px;
@@ -144,27 +148,27 @@ body {
   transition: opacity 0.5s;
 }
 
-/* line 142, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .icon img {
   width: 50px;
   height: 50px;
 }
 
-/* line 147, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .icon:hover {
   opacity: 0.5;
   cursor: pointer;
   transition: opacity 0.5s;
 }
 
-/* line 153, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 #highlighting-section {
   margin: 0;
   padding: 0;
   background-color: #fff;
 }
 
-/* line 159, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 #highlighting-section p {
   margin: auto;
   max-width: 720px;
@@ -177,7 +181,7 @@ body {
   line-height: 25pt;
 }
 
-/* line 171, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .bottom-gradient {
   /* Gradient: */
   background-image: linear-gradient(-180deg, rgba(200, 200, 200, 0) 0%, #fcfcfc 39%);
@@ -186,7 +190,7 @@ body {
   bottom: 0;
 }
 
-/* line 179, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 #down-arrow {
   display: block;
   position: absolute;
@@ -199,12 +203,12 @@ body {
   cursor: pointer;
 }
 
-/* line 191, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .results-section {
   width: 100%;
 }
 
-/* line 195, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 #analytics-section {
   width: 100%;
   background-color: #555;

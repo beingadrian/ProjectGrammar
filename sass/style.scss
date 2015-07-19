@@ -33,24 +33,26 @@
 }
 .noMargin {
 	margin: 0 0;
-     width: 100%;
+    width: 100%;
 }
 
 #title {
-  background-color: #FFB866;
-  margin: 0;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25pt;
+    color: #555;
+}
+
+header {
+    height: 80px;
+    background-color: #eee;
 }
 
 body {
     margin: 0;
-	width: 100vw;
-}
-
-// Basic CSS
-
-body {
-  margin: 0;
-  padding: 0;
+    padding: 0;
 }
 
 
