@@ -33,7 +33,7 @@ _app.formSubmissionHandler = function (data){
        
    }
     
-    document.getElementById("testoutput").innerHTML = output;
+    document.getElementById("output").innerHTML = output;
 }
 
 _app.audioSubmission = function (event) {

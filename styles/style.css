@@ -1,8 +1,3 @@
-/* line 14, ../sass/style.scss */
-:root {
-  height: 100vh;
-}
-
 /* line 18, ../sass/style.scss */
 .centeredHorizontally, .centered {
   position: absolute;
@@ -39,9 +34,16 @@
 /* line 39, ../sass/style.scss */
 .noMargin {
   margin: 0 0;
+  width: 100%;
 }
 
-/* line 43, ../sass/style.scss */
-#id {
-  background-color: #050505;
+/* line 44, ../sass/style.scss */
+#title {
+  background-color: #FFB866;
+  margin: 0;
+}
+
+/* line 49, ../sass/style.scss */
+body {
+  margin: 0;
 }
